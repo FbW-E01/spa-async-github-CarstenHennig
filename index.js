@@ -23,12 +23,11 @@ form.addEventListener("submit", (e) => {
 });
 
 function repoOnPage(i) {
-  //   repositories.innerHTML = i;
   for (var j = 0; j < i.length; j++) {
     console.log(i[j].name);
     console.log(i[j].html_url);
     let repoItem = document.createElement("li");
-    repoItem.innerHTML = `Repo name: ${i[j].name} - Repo url: ${i[j].html_url}`;
+    repoItem.innerHTML = `Repo name: ${i[j].name} --- Repo url: ${i[j].html_url}`;
     repositories.appendChild(repoItem);
   }
 }
